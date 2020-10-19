@@ -49,7 +49,7 @@ const useStyles = makeStyles({
 
 // User Profile Details/Statistics Component
 export default function ProfileDetails(props) {
-   
+
     const [fullName, setFullName] = React.useState(props.fullName);
     const [input, setInput] = React.useState(null);
     const [open, setOpen] = React.useState(false);
@@ -67,12 +67,11 @@ export default function ProfileDetails(props) {
         setInput(e.target.value);
         console.log(e.target.value);
     };
-    
+
     const updateFullName = () => {
         if (!input) {
             setError("show");
-        }
-        else {
+        } else {
             setFullName(input);
             handleClose();
         }

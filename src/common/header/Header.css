@@ -3,17 +3,17 @@
     height: 32px;
 }
 
-.side-logo{
+.side-logo {
     color: #fff;
-    height:  18px;
+    height: 18px;
     vertical-align: middle;
 }
 
-.after-login{
-     float: right;
-     display: flex;
+.after-login {
+    float: right;
+    display: flex;
 }
 
 .greyed {
-  background-color: grey;
+    background-color: grey;
 }

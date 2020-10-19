@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     block: {
         display: 'block'
     }
-    
+
 });
 
 // Post likes component
@@ -26,7 +26,7 @@ export default function PostLikes(props) {
     const [likes, setLikes] = React.useState(props.likes);
     const classes = useStyles();
     const onLike = () => {
-        (isLiked) ? setLikes(likes-1) : setLikes(likes+1);
+        (isLiked) ? setLikes(likes - 1): setLikes(likes + 1);
         setLiked(!isLiked);
     }
     return (
