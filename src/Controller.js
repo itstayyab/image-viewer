@@ -12,6 +12,7 @@ class Controller extends Component {
         super();
         this.baseUrl = "v1/users/self/";
     }
+    
     render() {
         console.log("LoggedIn value is :" + this.props.loggedIn);
         return (

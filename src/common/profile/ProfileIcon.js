@@ -36,10 +36,8 @@ export default function ProfileIcon(props) {
                 if (props.type === "avatarWithMenu") {
                     return (<div>
                         <IconButton className={classes.userAvatar} onClick={handleOpen}>
-                            <Avatar alt="AS" src={ProfileImage} />
-                        </IconButton>
-                        <Menu id="profile-menu" anchorEl={anchor} keepMounted open={Boolean(anchor)}
-                            onClose={handleClose}>
+                            <Avatar alt="AS" src={ProfileImage} /></IconButton>
+                        <Menu id="profile-menu" anchorEl={anchor} keepMounted open={Boolean(anchor)} onClose={handleClose}>
                             {props.menuOptions.map((menuItem, index) => (
                                 <div key={"menu-item-" + index} >
                                     <MenuItem onClick={props.handlers[index]}>{menuItem}</MenuItem>
