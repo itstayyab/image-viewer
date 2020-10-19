@@ -8,10 +8,8 @@ import PostComments from '../../common/post/PostComments';
 import PageWithHeader from '../../common/header/PageWithHeader';
 import ProfileDetail from '../../common/profile/ProfileDetails';
 import ProfileIcon from '../../common/profile/ProfileIcon';
-import { postsDetails } from '../../common/Test';
 import Config from '../../common/config';
 import './Profile.css';
-
 
 export default class Profile extends Component {
     constructor() {
@@ -64,10 +62,6 @@ export default class Profile extends Component {
             }
             this.setState({ userPosts: posts });
         }
-        else {
-            this.setState({ userPosts: postsDetails });
-        }
-
     }
 
     // Handler to open post modal
